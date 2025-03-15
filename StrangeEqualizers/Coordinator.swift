@@ -45,4 +45,14 @@ class Coordinator {
 
         navigationController.pushViewController(hostingController, animated: true)
     }
+    
+    func navigateToRandomScreen() {
+        let viewModel = RandomViewModel()
+        viewModel.coordinator = self
+
+        let contentView = RandomView(viewModel: viewModel)
+        let hostingController = UIHostingController(rootView: contentView)
+
+        navigationController.pushViewController(hostingController, animated: true)
+    }
 }

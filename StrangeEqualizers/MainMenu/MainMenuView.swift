@@ -22,9 +22,9 @@ struct MainMenuView: View {
                     action: { viewModel.navigateToPumpScreen() }
                 )
                 MenuCard(
-                    title: "Костер",
-                    imagePlaceholder: "",
-                    action: {  }
+                    title: "Рандом",
+                    imagePlaceholder: "diceLogo",
+                    action: { viewModel.navigateToRandomScreen() }
                 )
                 MenuCard(
                     title: "Затмение",
