@@ -18,7 +18,7 @@ struct MainMenuView: View {
             ], spacing: 16) {
                 MenuCard(
                     title: "Насос",
-                    imagePlaceholder: "waveform.path.ecg",
+                    imagePlaceholder: "Nasos",
                     action: { viewModel.navigateToPumpScreen() }
                 )
                 MenuCard(
@@ -53,9 +53,10 @@ struct MenuCard: View {
                     .fill(Color.gray.opacity(0.2))
                     .frame(height: 150)
                     .overlay(
-                        Image(systemName: imagePlaceholder)
-                            .font(.system(size: 50))
-                            .foregroundColor(.gray)
+                        Image(imagePlaceholder)
+                            .resizable()
+                            .scaledToFit()
+                            .padding()
                     )
                 
                 Text(title)
