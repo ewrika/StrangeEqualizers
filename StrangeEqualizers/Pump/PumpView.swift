@@ -10,7 +10,8 @@ import AVKit
 
 struct PumpView: View {
     @ObservedObject var viewModel: PumpViewModel
-    
+    //TODO: футбольный мяч
+
     var body: some View {
         HStack() {
             VStack {

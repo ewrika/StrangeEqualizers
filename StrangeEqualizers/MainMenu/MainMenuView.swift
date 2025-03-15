@@ -23,17 +23,17 @@ struct MainMenuView: View {
                 )
                 MenuCard(
                     title: "Костер",
-                    imagePlaceholder: "waveform.path.ecg",
+                    imagePlaceholder: "",
                     action: {  }
                 )
                 MenuCard(
                     title: "Затмение",
-                    imagePlaceholder: "waveform.path.ecg",
-                    action: {  }
+                    imagePlaceholder: "SunEclipse",
+                    action: { viewModel.navigateToSolarEclipseScreen() }
                 )
                 MenuCard(
                     title: "Эквалайзер",
-                    imagePlaceholder: "waveform.path.ecg",
+                    imagePlaceholder: "",
                     action: {  }
                 )
             }

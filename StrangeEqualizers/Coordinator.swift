@@ -35,4 +35,14 @@ class Coordinator {
 
         navigationController.pushViewController(hostingController, animated: true)
     }
+    
+    func navigateToSolarEclipseScreen() {
+        let viewModel = SolarEclipseViewModel()
+        viewModel.coordinator = self
+
+        let contentView = SolarEclipseView(viewModel: viewModel)
+        let hostingController = UIHostingController(rootView: contentView)
+
+        navigationController.pushViewController(hostingController, animated: true)
+    }
 }

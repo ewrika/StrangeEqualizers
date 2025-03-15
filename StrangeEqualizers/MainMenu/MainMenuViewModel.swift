@@ -13,11 +13,12 @@ class MainMenuViewModel: ObservableObject {
     func navigateToPumpScreen() {
         coordinator?.navigateToPumpScreen()
     }
-    /*
-    func navigateToBonfireScreen() {
-        coordinator?.navigateToBonfireScreen()
+   
+    func navigateToSolarEclipseScreen() {
+        coordinator?.navigateToSolarEclipseScreen()
     }
-
+    
+    /*
     func navigateToEclipseScreen() {
         coordinator?.navigateToEclipseScreen()
     }
@@ -26,4 +27,5 @@ class MainMenuViewModel: ObservableObject {
         coordinator?.navigateToEqualizerScreen()
     }
     */
+    
 }
